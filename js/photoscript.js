@@ -2,6 +2,7 @@ $(document).ready(function() {
 
 	var $album1 = $(".album1Content");
 	var $album2 = $(".album2Content");
+	var $album3 = $(".album3Content");
 	//var $nav = $(".cover1img");
 
 
@@ -102,6 +103,57 @@ $(".sunrise4").click(function(event) {
 		$(this).addClass("bigger");
 	}
 	});
+//album 3 all the things
+$(".cover3img").click(function(event) {
+		event.preventDefault();
+	if($album3.hasClass("show")) {
+		return;
+	} else {
+		$album3.siblings().removeClass("show");
+		$album3.addClass("show");
+		$(".cover2img, .cover1img, .cover3img").hide();
+	}
+});
+//change size attempt & hide 
+$(".random1").click(function(event) {
+		event.preventDefault();
+  		$(".random2, .random3, .random4").hide();
+	if ($(this).hasClass("bigger")){
+		$(this).removeClass("bigger");
+	}else{
+		$(this).addClass("bigger");
+	}
+	});
+
+$(".random2").click(function(event) {
+		event.preventDefault();
+		$(".random1, .random3, .random4").hide();
+	if ($(this).hasClass("bigger")){
+		$(this).removeClass("bigger");
+	}else{
+		$(this).addClass("bigger");
+	}
+	});
+$(".random3").click(function(event) {
+		event.preventDefault();
+  		$(".random1, .random2, .random4").hide();
+	if ($(this).hasClass("bigger")){
+		$(this).removeClass("bigger");
+	}else{
+		$(this).addClass("bigger");
+	}
+	});
+$(".random4").click(function(event) {
+		event.preventDefault();
+  		$(".random1, .random2, .random3").hide();
+	if ($(this).hasClass("bigger")){
+		$(this).removeClass("bigger");
+	}else{
+		$(this).addClass("bigger");
+	}
+	});
+
+
 
 
 		
