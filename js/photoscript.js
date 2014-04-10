@@ -13,7 +13,7 @@ $(".cover1img").click(function(event) {
 	} else {
 		$album1.siblings().removeClass("show");
 		$album1.addClass("show");
-		$(".cover1img, .cover2img").hide();
+		$(".cover1img, .cover2img, .cover3img").hide();
 	}
 });
 //change size attempt & hide all else, but not sure how to return yet
@@ -62,7 +62,7 @@ $(".cover2img").click(function(event) {
 	} else {
 		$album2.siblings().removeClass("show");
 		$album2.addClass("show");
-		$(".cover2img, .cover1img").hide();
+		$(".cover2img, .cover1img, .cover3img").hide();
 	}
 });
 //change size attempt & hide 
